@@ -53,7 +53,7 @@ function levelForTotalXp(xp) {
 }
 // You log ~12 "key" games instead of the full 82-game season, so each logged
 // game is worth roughly 82/12 of a normal game's XP. Tune this if your game count changes.
-const GAMES_MULTIPLIER = 7;
+const GAMES_MULTIPLIER = 140;
 
 function xpNeededForAttr(value, category, position, heightStr) {
   const base = 3.2 * Math.pow(1.113, value);
