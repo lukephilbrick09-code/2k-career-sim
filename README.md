@@ -11,8 +11,7 @@
 
 `config.js` already has your Supabase URL and **publishable key** wired in, so it should work immediately after deploy.
 
-## ⚠️ Important security note
-You shared a **secret key** (`sb_secret_...`) earlier in this chat. That key has full admin access to your database and must never appear in `config.js`, the GitHub repo, or anywhere client-side — only the publishable key belongs there (already set up correctly). Since the secret key was pasted in this conversation, go rotate it now: Supabase → Project Settings → API → regenerate the secret key. You won't need it for this app at all.
+
 
 Also: since there's no login system, anyone with your app's URL could view/edit your data. Fine for personal use — just don't post the link publicly.
 
