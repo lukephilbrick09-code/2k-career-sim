@@ -1,15 +1,5 @@
 # MyCareer Sim — Setup
 
-## 1. Database (one-time)
-1. Go to your Supabase project → **SQL Editor** → New Query
-2. Paste everything from `schema.sql` and click **Run**
-
-## 2. Put it online (free)
-1. Create a new GitHub repo, upload these 5 files: `index.html`, `style.css`, `app.js`, `config.js`, `schema.sql`
-2. Go to vercel.com → **Add New Project** → import that repo → Deploy
-3. Vercel gives you a free `.vercel.app` URL — that's your live app, bookmark it on your phone
-
-`config.js` already has your Supabase URL and **publishable key** wired in, so it should work immediately after deploy.
 
 
 
@@ -24,14 +14,4 @@ Also: since there's no login system, anyone with your app's URL could view/edit 
 - **Contracts** — sign salary/years/options, signing bonus pays out immediately
 - **Seasons & Awards** — season-by-season averages, career totals, an awards cabinet, and an "Advance Season" button that pays your contract salary into VC
 
-## Not built yet (Phase 3, if you want it later)
-Training staff/facilities, housing, vehicles, business investments, endorsements, PEDs with risk events, hidden attributes, player photos, career milestones/records auto-detection.
 
-## Tuning the numbers
-All formulas live near the top of `app.js`:
-- `statCategoryPools()` — how a box score converts to XP per category
-- `xpNeededForAttr()` — attribute level-up cost curve
-- `TIER_THRESHOLDS` — badge tier costs
-- `LEVEL_MILESTONES` — level-up XP curve
-
-Change any number, refresh the page, done — no rebuild step.
